@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+     box-sizing: border-box; -webkit-tap-highlight-color: rgba(0,0,0,0);
+   }
+body,
+dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+pre, code, form, fieldset, legend, input, textarea,
+p, blockquote, th, td, hr, button,
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* Ĭ�ϲ�Ҫ�»��� */
+a {text-decoration: none;}
+/* ��ť�ı�����ѡ */
+button {user-select: none;}
+img {vertical-align: middle;
+display: inline-block;
+width: 100%;
+}
+/* ���ز�������ͼƬ��Ҫ��ʾ��ɫ�߿� */
+img:not([src]),img[src=""] {opacity: 0;}
+ul, ol {list-style: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+input, select, button, textarea {font-size: 100%; font: inherit;}
+html, body {
+  height: 100%;
+   overflow-x: hidden;
+   width: 100%;
+ }

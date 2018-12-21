@@ -1,0 +1,259 @@
+.pos(r){position: relative;}
+.pos(a){position: absolute;}
+.po(f){position: fixed;}
+*::-webkit-scrollbar {/*滚动条整体样式*/
+	width: 0px;     /*高宽分别对应横竖滚动条的尺寸*/
+	height: 0px;
+}
+*::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0);
+	background: #EEEFF3;
+}
+*::-webkit-scrollbar-track {/*滚动条里面轨道*/
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0);
+	border-radius: 0;
+	background: rgba(0,0,0,0);
+}
+.clears{
+    clear: both;
+}
+
+.donateStepIndex{
+    .dataInfo{
+        position: relative;
+        padding:0.4rem 0.3rem;
+        .dataLeft{
+            position: absolute;
+            left: 0.3rem;
+            li{
+                font-size:0.26rem;
+                color:#1b1b1b;
+                margin-bottom:0.14rem;
+                img{
+                    display:inline-block;
+                    width: 0.42rem;
+                    height:0.42rem;
+                    vertical-align: middle;
+                    margin-top:-3px;
+                    margin-right:0.12rem;
+                }
+                span{
+                    font-size:0.3rem;
+                    &.jinbi{
+                        color:#f39700;
+                    }
+                    &.jifen{
+                        color:#00a0e9;
+                    }
+                }
+            }
+        }
+        .ticket{
+            font-size:0.26rem;
+            color:#fff;
+            background:#2fbdfe;
+            width:2rem;
+            .pos(a);
+            right:0;
+            padding:0.13rem 0.14rem 0.12rem 0.14rem;
+            border-radius:0.3rem 0 0 0.3rem;
+            img{
+                display:inline-block;
+                width: 0.42rem;
+                height:0.42rem;
+                vertical-align: middle;
+                margin-top:-3px;
+                margin-right:0.12rem;
+            }
+        }
+        .stepNumBox{
+            width:3rem;
+            height:3rem;
+            margin:1.3rem auto 0;
+            background:rgba(33,180,252,0.2);
+            border-radius:50%;
+            overflow:hidden;
+            .stepNum{
+                width:2.54rem;
+                height:2.54rem;
+                background-image: linear-gradient(160deg, #00b3ff 20%,#b100ff 80%);
+                border-radius:50%;
+                margin:0.23rem auto;
+                text-align:center;
+                font-size:0.24rem;
+                color:#fff;
+                padding:0.38rem 0;
+                box-sizing: border-box;
+
+                .step{
+                    font-size:0.66rem;
+                    color:#fff;
+                    margin:0.12rem 0;
+                }
+            }
+        }
+        .tips{
+            text-align:center;
+            font-size:0.22rem;
+            color:#a0a0a0;
+            margin-top:0.24rem;
+        }
+    }
+    .inviteBox{
+        ul{
+            width:6.4rem;
+            margin:0 auto;
+            display:-webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            li{
+                box-flex:1;
+                -webkit-box-flex:1;
+                -moz-box-flex:1;
+                flex:1;
+                -webkit-flex:1;
+                text-align:center;
+                .imgs{
+                    .pos(r);
+                    width:0.9rem;
+                    height:0.9rem;
+                    margin:0 auto 0.16rem;
+                    img{
+                        display:block;
+                        width:0.9rem;
+                        height:0.9rem;
+                    }
+                    .numBox{
+                        .pos(a);
+                        width:0.6rem;
+                        padding:0.01rem 0;
+                        font-size:0.16rem;
+                        border-radius:0.2rem;
+                        right:-0.1rem;
+                        top:-0.1rem;
+                        background:rgba(255,255,255,0.9);
+                        
+                        &.pyq{
+                            border:1px solid #ec6941;
+                            color:#ec6941;
+                        }
+                        &.school{
+                            border:1px solid #04aabd;
+                            color:#04aabd;
+                        }
+                        &.university{
+                            border:1px solid #0477d4;
+                            color:#0477d4;
+                        }
+
+                    }
+                }
+                
+                p{
+                    font-size:0.24rem;
+                    color:#1b1b1b;
+                    &:last-of-type{
+                        color:#a0a0a0;
+                        margin-top:0.14rem;
+                    }
+                }
+               
+                .join{
+                    width: 1.2rem;
+                    height:0.36rem;
+                    font-size:0.26rem;
+                    color:#fff;
+                    background:#0caafc;
+                    text-align:center;
+                    line-height:0.36rem;
+                    margin:0 auto;
+                    border-radius:0.18rem;
+                }
+                
+            }
+        }
+        .inviteBtn{
+            width:5.2rem;
+            height:0.9rem;
+            margin:0.66rem auto 0.2rem;
+            border-radius:0.45rem;
+            background:#25c7fe;
+            font-size:0.36rem;
+            text-align: center;
+            line-height: 0.9rem;
+            color:#fff;
+        }
+        .exp{
+            font-size:0.22rem;
+            color:#a0a0a0;
+            text-align:center;
+        }
+    }
+    .titBox{
+        margin-top:0.62rem;
+        h1{
+            font-size:0.36rem;
+            color:#1b1b1b;
+        }
+        p{
+            font-size:0.24rem;
+            color:#a0a0a0;
+            margin-top:0.2rem;
+        }
+        .flBox{
+            color:#a0a0a0;
+            font-size:0.24rem;
+            float:right;
+            margin-top:0.1rem;
+            img{
+                display:inline-block;
+                width:0.2rem;
+                vertical-align: middle;
+                margin-top:-3px;
+                margin-left:0.1rem;
+            }
+        }
+    }
+    .newBuyer{
+        padding:0 0.3rem;
+        
+        
+        .shopBox{
+            margin-top:0.5rem;
+            overflow-x: scroll;
+            ul{
+                width:200%;
+               
+                li{
+                    float:left;
+                    margin-right:0.3rem;
+                    img{
+                        display:block;
+                        width:1.88rem;
+                    }
+                    p{
+                        font-size:0.28rem;
+                        color:#1b1b1b;
+                        margin-top:0.2rem;
+                    }
+                    .price{
+                        text-align:center;
+                        margin-top:0.18rem;
+                        img{
+                            display:inline-block;
+                            width:0.42rem;
+                            vertical-align: middle;
+                            margin-top:-3px;
+                            margin-right:0.14rem;
+                        }
+                        font-size:0.34rem;
+                        color:#f39700;
+                    }
+                }
+            }
+        }
+    }
+}
